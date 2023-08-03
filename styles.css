@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url("img/fondoprincipal.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px #FFA500, 0 0 20px #FFA500, 0 0 30px #FFA500;
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: none;
+    border-radius: 0px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.input-container button {
+    padding: 10px 20px;
+    background-color: #FFA500;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.pizza-card {
+    padding: 10px;
+    margin: 10px auto;
+    width: 300px;
+    background-color: none;
+}
+
+.pizza-card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.pizza-card h2 {
+    margin: 5px 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px #FF0000;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.pizza-card p {
+    margin: 5px 0;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px #FF0000;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .input-container {
+        flex-direction: column;
+    }
+
+    .input-container input,
+    .input-container button {
+        border-radius: 5px;
+        margin: 5px 0;
+    }
+
+    .pizza-card {
+        width: 100%;
+    }
+
+    .pizza-card img {
+        max-width: 70%; /* Ajusta el tamaño de las imágenes en tablets y móviles */
+    }
+}
